@@ -2,7 +2,9 @@ name: Daily Telegram Bot Job
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # Esegue il job ogni giorno alle 7:00 UTC; ricordati di adeguare il fuso orario se necessario.
+    - cron: '0 7 * * *'  # Esegue il job ogni giorno alle 7:00 UTC.
+  workflow_dispatch:   # Aggiungi questa riga per abilitare il trigger manuale.
+
 
 jobs:
   run-script:
